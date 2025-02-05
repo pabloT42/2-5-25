@@ -1,0 +1,17 @@
+#list of charcaters to find the unicode numbers of 
+letters = ["m", "a", "r", "i", "o"]
+
+# #print the symbol corresponding to each unicode
+print()
+print("unicode numbers for", letters)
+for i in letters:
+     print(ord(i), end=" ")
+
+# #list of unicode points for various symbols
+symbols = [0x1F43F, 0x1F435, 0x1F430, 0x1F42F, 0x1F416]
+
+# # print the symbol corresponding to each unicode point
+print()
+print("unicode symbols for", symbols)
+for j in symbols:
+     print(chr(j), end=" ")
