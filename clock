@@ -1,0 +1,12 @@
+# ask the user for the current hour (1-12)
+current_hours = int(input("enter the current hour (1-24): "))
+
+# #ask the user how many hours to add
+hours_to_add = int(input("how many hours do you want to add? "))
+
+# #calculate the hours using modulo 12 to wrap around after 12
+# #adjust by subtracting 1 before the modulo and adding 1 after tu ensure 1-12 range
+new_hour = ((current_hours - 1 + hours_to_add) % 24) + 1
+
+# #print the result
+print("in", hours_to_add, "hours, the time will be", new_hour, ":00.")
